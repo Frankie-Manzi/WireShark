@@ -21,8 +21,8 @@ The Network Traffic monitoring project aimed to perform network traffic monitori
 
 ## Steps
 - Two screenshots of HackTheBox Sherlock questions regarding the specific PCAP file that showcased network traffic regarding a brute force attack.
-![Screenshot 2025-03-28 204249](https://github.com/user-attachments/assets/a707bfcf-b485-4ac6-9e40-734ce5251b50)
 ![Screenshot 2025-03-28 204238](https://github.com/user-attachments/assets/f9e68881-8e7a-4fce-a10f-ac806ae13a6a)
+![Screenshot 2025-03-28 204249](https://github.com/user-attachments/assets/a707bfcf-b485-4ac6-9e40-734ce5251b50)
 - This screenshot shows the conversations that are contained in this specific PCAP file sorted by the amount of bytes from highest to lowest. This information shows that the highest number of bytes that were sent were from the source IP address of 15.206.185.207 > the destination IP address of 172.31.45.144. This provides key information regarding which IP addresses to filter by and gain more information.
 ![Screenshot 2025-03-28 203717](https://github.com/user-attachments/assets/df32ab1a-1a02-42e0-bd64-e0803d84c3d4)
 - Screenshot shows a filter of ip.addr == 15.206.185.207 in Wireshark to show all network traffic that contained the specific IP addres (either source or destination). Upon further analysis, I saw the FTP protocol being used and specific requests to access certain users which provided context and showed me that more information can be obtained if i filter for all FTP traffic
